@@ -8,7 +8,7 @@
 
 4 Run containers - ```docker compose up -d```
 
-5 Install dependencies - ```docker compose exec app composer install```
+5 Install dependencies - ```docker compose exec app composer install --no-dev```
 
 6 Generate application key - ```docker compose exec app php artisan key:generate```
 
