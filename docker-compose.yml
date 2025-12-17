@@ -2,7 +2,7 @@ services:
   app:
     build:
       context: .
-    container_name: test-laravel-app
+    container_name: app
     volumes:
       - .:/app:delegated
     ports:
