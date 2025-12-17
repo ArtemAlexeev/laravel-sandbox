@@ -1,5 +1,7 @@
 ## How to run
 
+0 Switch to v1 branch
+
 1 Clone the repository
 
 2 Copy .env.example file to .env file
