@@ -34,6 +34,7 @@ class FortuneService
 
         return UserHistory::create([
             'user_id' => $userId,
+            'number'  => $initialPoints,
             'result'  => $points > 0 ? 1 : 0,
             'points'  => $points,
         ]);

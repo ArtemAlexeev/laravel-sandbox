@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package App\Models
  * @property int $user_id
+ * @property int $number
  * @property bool $result
  * @property int $points
  */
@@ -19,12 +20,13 @@ class UserHistory extends Model
 
     protected $fillable = [
         'user_id',
+        'number',
         'result',
         'points',
     ];
 
     public function __toString(): string
     {
-        return ($this->result ? self::WIN : self::LOSE) . ' ' . $this->points;
+        return $this->number . ' ' . ($this->result ? self::WIN : self::LOSE) . ' ' . $this->points;
     }
 }

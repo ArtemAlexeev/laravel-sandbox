@@ -4,7 +4,7 @@ namespace App\Services\Pipelines\LuckAttempt;
 
 use Closure;
 
-class Pipe600 extends Pipe900
+class Pipe600
 {
     public function handle(string $initialPoints, Closure $next)
     {
